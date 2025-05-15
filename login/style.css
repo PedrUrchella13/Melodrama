@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: url(../IMG/Sem\ nome\ \(440\ x\ 956\ px\)\ \(1720\ x\ 1117\ px\).png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-box {
+  background-color: #1f003a8c;
+  border: 2px solid #310042;
+  border-radius: 10px;
+  padding: 30px 25px;
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(6px);
+}
+
+.login-box h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.login-box h2 span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  display: block;
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5e009444;
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 0.85rem;
+  margin: 15px 0;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1d003665;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #74c6e7;
+}
