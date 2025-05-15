@@ -92,5 +92,19 @@ button {
 }
 
 button:hover {
-  background-color: #74c6e7;
+  background-color: #1F003A;
+}
+.login-box {
+  animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
