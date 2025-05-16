@@ -9,3 +9,10 @@ Esses links levarão para páginas cruciais do projeto!😝
 [![Bia](https://img.shields.io/badge/Bia-C62300?style=for-the-badge&logo=github)](https://github.com/b1b14)
 [![Rayane](https://img.shields.io/badge/Rayane-500073?style=for-the-badge&logo=github)](https://github.com/RayaneF03)
 [![Melodrama](https://img.shields.io/badge/Melodrama-2A004E?style=for-the-badge&logo=github)](https://github.com/PedrUrchella13/Melodrama)
+
+## Público-Alvo👻
+
+- Jovens e Jovens Adultos são a principal faixa etária a se atingir
+- Artistas pequenos que querem se catapultar para o mercado
+- Artistas ja consolidados
+- Pessoas que procuram
