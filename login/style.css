@@ -21,6 +21,20 @@ body {
   max-width: 400px;
   padding: 20px;
 }
+/* Estilo para os labels e inputs */
+label {
+  color: white;
+}
+
+input {
+  color: white;
+  background-color: transparent; /* Para manter o fundo transparente, se necessário */
+  border: 1px solid white; /* Opcional: borda branca */
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Placeholder com cor branca semitransparente */
+}
 
 .login-box {
   background-color: #1f003a8c;
