@@ -4,39 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wicked</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- Link para o Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Wicked</h1>
-            <p>Dirigido por John Chu</p>
+<body class="bg-dark text-white">
+
+    <div class="container mt-4">
+        <header class="text-center">
+            <h1 class="display-4">Wicked</h1>
+            <p class="lead">Dirigido por John Chu</p>
             <p>2024 | 2h 40min</p>
         </header>
-        <section class="description">
-            <p>Nas Terras de Oz, os cidadãos de Munckinland comemoram a morte da Bruxa Má do Oeste. Glinda, a Boa, aparece para contar a história da Bruxa para os cidadãos...</p>
+
+        <section class="row align-items-center mt-4">
+            <div class="col-md-4 text-center">
+                <img src="wicked-poster.jpg" class="img-fluid rounded" alt="Poster de Wicked">
+            </div>
+            <div class="col-md-8">
+                <p class="fs-5">Nas Terras de Oz, os cidadãos de Munckinland comemoram a morte da Bruxa Má do Oeste. Glinda, a Boa, aparece para contar a história da Bruxa para os cidadãos...</p>
+                <p class="fw-bold">Avaliação: ⭐⭐⭐⭐⭐</p>
+            </div>
         </section>
-        <section class="rating">
-            <p>Avaliação:</p>
-            <p>⭐⭐⭐⭐☆</p>
-        </section>
-        <section class="soundtrack">
-            <h2>Wicked: The Soundtrack</h2>
-            <ul>
-                <li>No One Mourns the Wicked</li>
-                <li>Dear Old Shiz</li>
-                <li>The Wizard and I</li>
-                <li>What is This Feeling</li>
-                <li>Something Bad</li>
-                <li>Dancing Through Life</li>
-                <li>Popular</li>
-                <li>I'm Not That Girl</li>
-                <li>One Short Day</li>
-                <li>A Sentimental Man</li>
-                <li>Defying Gravity</li>
-                <li>Ozdust Dust - Bonus Track</li>
+
+        <section class="mt-4">
+            <h2 class="text-center">Wicked: The Soundtrack</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white">No One Mourns the Wicked</li>
+                <li class="list-group-item bg-dark text-white">Dear Old Shiz</li>
+                <li class="list-group-item bg-dark text-white">The Wizard and I</li>
+                <li class="list-group-item bg-dark text-white">What is This Feeling</li>
+                <li class="list-group-item bg-dark text-white">Something Bad</li>
+                <li class="list-group-item bg-dark text-white">Dancing Through Life</li>
+                <li class="list-group-item bg-dark text-white">Popular</li>
+                <li class="list-group-item bg-dark text-white">I'm Not That Girl</li>
+                <li class="list-group-item bg-dark text-white">One Short Day</li>
+                <li class="list-group-item bg-dark text-white">A Sentimental Man</li>
+                <li class="list-group-item bg-dark text-white">Defying Gravity</li>
+                <li class="list-group-item bg-dark text-white">Ozdust Dust - Bonus Track</li>
             </ul>
         </section>
     </div>
+
+    <!-- Link para o Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
