@@ -5,6 +5,10 @@ body {
     text-align: center;
 }
 
+.bg-dark {
+    background-color: #4b0082 !important; /* Roxo */
+}
+
 .container {
     max-width: 800px;
     margin: 20px auto;
