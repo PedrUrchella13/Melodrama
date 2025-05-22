@@ -5,8 +5,8 @@ body {
     text-align: center;
 }
 
-.bg-dark {
-    background-color: #4b0082 !important; /* Roxo */
+body {
+    background: linear-gradient(to right, #4b0082, #00d4ff);
 }
 
 .container {
