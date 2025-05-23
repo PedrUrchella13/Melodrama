@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicStreaming</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">MELODRAMA</a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sucessos do nosso site</a></li>
+                <li><a href="#">Quem Somos</a></li>
+                <li class="nav-right"><a href="#">Contato</a></li>
+                <li class="nav-right"><a href="#">Instale nosso Aplicativo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Descubra, Escute e<br>Cante com nosso<br>Aplicativo</h1>
+                </div>
+                <div class="hero-image">
+                    <img src="img/logo.png" alt="App Logo" id="appLogo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soundtracks Section -->
+    <section class="soundtracks">
+        <div class="container">
+            <h2 class="section-title">Ouça a SoundTrack das Melhores Obras do Cinema!</h2>
+            <div class="album-grid">
+                <div class="album-card" data-album="wicked">
+                    <img src="img/wicked.jpg" alt="Wicked" class="album-img">
+                    <div class="album-info">
+                        <h3 class="album-title">Wicked</h3>
+                        <p class="album-year">2024</p>
+                    </div>
+                </div>
+                <div class="album-card" data-album="substancia">
+                    <img src="img/substancia.jpg" alt="A Substância" class="album-img">
+                    <div class="album-info">
+                        <h3 class="album-title">A Substância</h3>
+                        <p class="album-year">2024</p>
+                    </div>
+                </div>
+                <div class="album-card" data-album="ainda-estou-aqui">
+                    <img src="img/ainda estou aqui.jpg" alt="Ainda Estou Aqui" class="album-img">
+                    <div class="album-info">
+                        <h3 class="album-title">Ainda Estou Aqui</h3>
+                        <p class="album-year">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section class="artists">
+        <div class="container">
+            <h2 class="section-title">Ouça os Artistas que estão no TrendMap Tópico</h2>
+            <p class="section-subtitle">Os Artistas mais Populares do Momento</p>
+            <div class="artist-grid">
+                <div class="artist-card" data-artist="billie">
+                    <img src="img/billie.jpg" alt="Billie Eilish" class="artist-img">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="artist-info">
+                        <h3 class="artist-name">Billie Eilish</h3>
+                        <p class="artist-song">"Hit Me Hard and Soft"</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-artist="weeknd">
+                    <img src="img/theweeknd.jpg" alt="The Weeknd" class="artist-img">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="artist-info">
+                        <h3 class="artist-name">The Weeknd</h3>
+                        <p class="artist-song">"Hurry Up Tomorrow"</p>
+                    </div>
+                </div>
+                <div class="artist-card" data-artist="jennie">
+                    <img src="img/jennie.jpg" alt="Jennie" class="artist-img">
+                    <div class="play-button">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <div class="artist-info">
+                        <h3 class="artist-name">Jennie</h3>
+                        <p class="artist-song">"Ruby"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Albums Section -->
+    <section class="popular-albums">
+        <div class="container">
+            <h2 class="section-title">Ouça os Álbuns mais procurados dos filmes</h2>
+            <div class="album-grid">
+                <div class="album-card" data-album="hsm">
+                    <img src="img/highschool.jpg" alt="High School Musical" class="album-img">
+                    <div class="album-info">
+                        <h3 class="album-title">High School Musical</h3>
+                        <p class="album-year">2006</p>
+                    </div>
+                </div>
+                <div class="album-card" data-album="Mufasa">
+                    <img src="img/mufasa.jpg" alt="Mufasa" class="album-img">
+                    <div class="album-info">
+                        <h3 class="album-title">Mufasa</h3>
+                        <p class="album-year">2023</p>
+                    </div>
+                </div>
+                <div class="album-card" data-album="wicked2">
+                    <img src="img/wiked.jpg" alt="Wicked" class="album-img">
+                    <div class="album-info">
+                        <h3 class="album-title">Wicked</h3>
+                        <p class="album-year">2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - FusionCode</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
