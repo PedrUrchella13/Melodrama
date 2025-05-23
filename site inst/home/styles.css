@@ -7,7 +7,7 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #0a0a20, #1a0040, #2a0060);
+   background-image: url('../home/img/Quem somos.png');
   color: white;
   min-height: 100vh;
 }
