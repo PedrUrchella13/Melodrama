@@ -146,6 +146,53 @@ body {
   border-radius: 10px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.soundtrack-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(60, 179, 113, 0.4),
+    transparent,
+    rgba(46, 139, 87, 0.6),
+    transparent,
+    rgba(60, 179, 113, 0.4),
+    transparent
+  );
+  background-size: 400% 400%;
+  border-radius: 12px;
+  z-index: -1;
+  animation: glowBorder 3s ease-in-out infinite;
+}
+
+@keyframes glowBorder {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.soundtrack-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: -1;
 }
 
 .soundtrack-section h2 {
