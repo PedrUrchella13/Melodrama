@@ -9,7 +9,7 @@ body {
 
 .app-container {
     height: 100vh;
-    background: linear-gradient(to bottom, #4a0080 0%, #7b00ff 100%);
+    background: linear-gradient(135deg, #2a004e 0%, #44007f 50%, #6100b4 100%);
     position: relative;
     overflow-y: auto;
     display: flex;
