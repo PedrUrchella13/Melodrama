@@ -94,6 +94,20 @@ img {
   transition: 0.3s;
 }
 
+.install-app {
+    background: linear-gradient(45deg, #8a2be2, #9932cc);
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    margin-left: 10px !important;
+}
+
+.install-app:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
+
+
 /* Hero Section */
 .hero {
   padding: 60px 0;
