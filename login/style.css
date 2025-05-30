@@ -1,0 +1,168 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;700&display=swap');
+
+/* Reset e estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../IMG/Sem\ nome\ \(440\ x\ 956\ px\)\ \(1720\ x\ 1117\ px\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Container principal - simplificado */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 20px;
+}
+
+/* Estilo da caixa de login */
+.login-box {
+    background-color: rgba(31, 0, 58, 0.55);
+    border: 2px solid #310042;
+    border-radius: 10px;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    animation: fadeIn 1s ease;
+}
+
+/* Estilo do título */
+.login-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.login-box h2 span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Descrição */
+.description {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Estilo para labels */
+.form-label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+/* Estilo para inputs */
+.form-control {
+    background-color: rgba(94, 0, 148, 0.27);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    background-color: rgba(94, 0, 148, 0.4);
+    border-color: #310042;
+    box-shadow: 0 0 0 0.25rem rgba(94, 0, 148, 0.25);
+    color: white;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Estilo para checkbox */
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.form-check-input {
+    background-color: rgba(94, 0, 148, 0.27);
+    border-color: rgba(255, 255, 255, 0.5);
+    margin-right: 8px;
+}
+
+.form-check-input:checked {
+    background-color: #310042;
+    border-color: #310042;
+}
+
+.form-check-label {
+    margin-left: 5px;
+    font-weight: normal;
+    color: white;
+}
+
+/* Estilo para botão */
+.btn-primary {
+    background-color: rgba(29, 0, 54, 0.4);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+    text-transform: lowercase;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #1F003A;
+}
+
+/* Animação de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ajustes responsivos */
+@media (max-width: 576px) {
+    .login-box {
+        padding: 20px;
+    }
+    
+    .login-box h2 {
+        font-size: 1.2rem;
+    }
+    
+    .login-box h2 span {
+        font-size: 1.6rem;
+    }
+}
