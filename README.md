@@ -3,6 +3,7 @@
 Projeto feito em sala de aula que visa tornar o acesso do mercado da música mais acessível para iniciantes, tornando o contato entre fã e artista mais próximo, contando com um sistema de resenhas para filmes e incorporando sua trilha sonora também.
 
 ## 🔗 Links
+
 Esses links levarão para páginas cruciais do projeto!😝
 
 [![Pedro](https://img.shields.io/badge/Pedro-2A004E?style=for-the-badge&logo=github)](https://github.com/PedrUrchella13)
@@ -16,4 +17,3 @@ Esses links levarão para páginas cruciais do projeto!😝
 - Artistas pequenos que querem se catapultar para o mercado
 - Artistas ja consolidados
 - Pessoas que procuram
-- Teste

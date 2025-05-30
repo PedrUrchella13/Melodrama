@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.melodrama {
+  font-family: "Great Vibes", cursive;
+}
+
+.btnMenu {
+  background: #9ba0ff !important;
+}
+
+.iconePesquisa {
+  background: #ffffff33;
+}
+
+.fundoPesquisa {
+  background-color: #554272;
+}
+
+#pesquisar {
+  outline: none;
+}
