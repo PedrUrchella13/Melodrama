@@ -15,30 +15,60 @@ body {
 
 /* Header */
 header {
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.3);
-}
-
-.navbar {
-    padding: 0;
+    background: rgba(10, 10, 26, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+    z-index: 1000;
 }
 
 .navbar-brand {
-    color: #64b5f6 !important;
-    font-weight: bold;
-    font-size: 1.2rem;
+    color: #8a2be2 !important;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
 }
 
 .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.8) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
     margin: 0 15px;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #64b5f6 !important;
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #8a2be2 !important;
 }
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #8a2be2;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.install-app {
+    background: linear-gradient(45deg, #8a2be2, #9932cc);
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    margin-left: 10px !important;
+}
+
+.install-app:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
 
 /* Hero Section */
 .hero-section {
