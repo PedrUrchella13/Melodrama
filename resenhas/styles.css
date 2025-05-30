@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, #0a3d0a 0%, #000000 100%);
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.review-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 30px;
+}
+
+.movie-info {
+  width: 60%;
+}
+
+.movie-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #3cb371;
+  margin-bottom: 10px;
+}
+
+.basic-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.movie-description {
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #2e8b57;
+  color: #000;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid #2e8b57;
+  color: #2e8b57;
+}
+
+.primary-btn:hover {
+  background-color: #3cb371;
+}
+
+.secondary-btn:hover {
+  background-color: rgba(46, 139, 87, 0.1);
+}
+
+.reviews-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.review-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-label {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.stars {
+  display: flex;
+  gap: 5px;
+}
+
+.stars i {
+  color: #444;
+  font-size: 1.2rem;
+}
+
+.stars i.filled {
+  color: #3cb371;
+}
+
+.movie-poster {
+  width: 35%;
+}
+
+.movie-poster img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.soundtrack-section {
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.soundtrack-section::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(60, 179, 113, 0.4),
+    transparent,
+    rgba(46, 139, 87, 0.6),
+    transparent,
+    rgba(60, 179, 113, 0.4),
+    transparent
+  );
+  background-size: 400% 400%;
+  border-radius: 12px;
+  z-index: -1;
+  animation: glowBorder 3s ease-in-out infinite;
+}
+
+@keyframes glowBorder {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.soundtrack-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.soundtrack-section h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.soundtrack-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.track-list {
+  width: 60%;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.track-number {
+  width: 30px;
+  font-weight: 700;
+  color: #3cb371;
+}
+
+.track-name {
+  color: #eee;
+}
+
+.album-cover {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.album-cover img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.album-info p {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.album-info strong {
+  color: #fff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #666;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .review-section,
+  .soundtrack-content {
+    flex-direction: column;
+  }
+
+  .movie-info,
+  .movie-poster,
+  .track-list,
+  .album-cover {
+    width: 100%;
+  }
+
+  .movie-poster,
+  .album-cover {
+    margin-top: 30px;
+  }
+}
