@@ -1,0 +1,349 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0a0a2e 0%, #1a1a4e 30%, #2a2a6e 60%, #3a3a8e 100%);
+    color: white;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgba(10, 10, 26, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: #8a2be2 !important;
+    font-size: 1.8rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 500;
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #8a2be2 !important;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #8a2be2;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+.install-app {
+    background: linear-gradient(45deg, #8a2be2, #9932cc);
+    border-radius: 20px;
+    padding: 8px 20px !important;
+    margin-left: 10px !important;
+}
+
+.install-app:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: radial-gradient(ellipse at center right, rgba(100, 181, 246, 0.4) 0%, rgba(100, 181, 246, 0.2) 40%, transparent 70%);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    padding-right: 40px;
+}
+
+.hero-text p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: justify;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Team Section - CORRIGIDA */
+.team-section {
+    padding: 80px 0 60px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.team-member {
+    margin-bottom: 60px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(100, 181, 246, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 40px rgba(100, 181, 246, 0.3);
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 4px solid #64b5f6;
+    box-shadow: 0 10px 25px rgba(100, 181, 246, 0.5);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.member-photo:hover {
+    transform: scale(1.05);
+    border-color: #90caf9;
+    box-shadow: 0 15px 35px rgba(100, 181, 246, 0.7);
+    border-radius: 25px;
+}
+
+.member-info {
+    flex: 1;
+}
+
+.member-info p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+}
+
+/* Efeitos de luz adicionais */
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 10%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(100, 181, 246, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 1;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .hero-text {
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .hero-image {
+        justify-content: center;
+    }
+    
+    .main-image {
+        max-width: 280px;
+    }
+    
+    .team-section {
+        max-width: 90%;
+    }
+    
+    .team-member {
+        padding: 25px;
+        gap: 25px;
+    }
+    
+    .member-photo {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .team-member {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    
+    .member-photo {
+        width: 140px;
+        height: 140px;
+        margin: 0 auto;
+    }
+    
+    .member-info p {
+        font-size: 0.95rem;
+        text-align: center;
+    }
+    
+    .main-image {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 10px;
+    }
+    
+    .hero-text {
+        padding-right: 0;
+    }
+    
+    .team-member {
+        margin-bottom: 40px;
+        padding: 25px 15px;
+    }
+    
+    .member-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 15px;
+    }
+    
+    .member-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animações suaves */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efeito de brilho sutil */
+.hero-section {
+    background: 
+        radial-gradient(circle at 80% 20%, rgba(100, 181, 246, 0.15) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(66, 165, 245, 0.1) 0%, transparent 50%);
+}
+
+/* Efeito de gradiente nos cards da equipe */
+.team-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(100, 181, 246, 0.1) 0%, transparent 50%);
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover::before {
+    opacity: 1;
+}
