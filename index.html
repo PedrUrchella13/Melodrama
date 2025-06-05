@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>melodrama</title>
+  </head>
+  <body
+    style="
+      background-image: url(img/fundo.png);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      position: relative;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <!-- <div id="inicio" class="bgfundo"></div> -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark py-4"
+      style="background: #1d0046"
+    >
+      <div class="container-fluid gap-3 gap-md-0">
+        <a class="navbar-brand d-none d-md-block" href="#">
+          <img src="img/Design sem nome.png" alt="" height="60px" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="img/Design sem nome.png" alt="" height="60px" />
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+            <li class="nav-item">
+              <a
+                class="nav-link active btn btnMenu p-2 border border-2 text-dark fw-bold rounded-3"
+                aria-current="page"
+                href="#albuns-para-voce"
+                >Músicas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active btn btnMenu p-2 border border-2 text-dark fw-bold rounded-3"
+                aria-current="page"
+                href="#filmes-em-alta"
+                >Filmes</a
+              >
+            </li>
+            
+            <li class="nav-item">
+              <a
+                class="nav-link active btn btnMenu p-2 border border-2 text-dark fw-bold rounded-3"
+                aria-current="page"
+                href="#resenhas"
+                >Resenhas</a
+              >
+            </li>
+          </ul>
+          <form
+            class="my-4 px-4 py-2 rounded-pill fundoPesquisa d-flex justify-content-around"
+            role="search"
+          >
+            <input
+              class="bg-transparent border-0 text-light"
+              type="text"
+              name=""
+              id="pesquisar"
+              placeholder="Pesquisar..."
+              style="width: 18em"
+            />
+            <button
+              type="submit"
+              class="text-light bi bi-search py-1 px-2 rounded-2 iconePesquisa border border-1"
+            ></button>
+          </form>
+
+          <div
+            class="d-none d-md-flex align-items-center justify-content-center text-light gap-2"
+          >
+            <p class="melodrama fs-1 m-0">Melodrama!</p>
+            <img id="fotoPerfil" src="img/perfil.png" alt="" height="70px" />
+            <i
+              class="bi bi-bookmarks fs-1 iconePesquisa px-3 py-2 rounded-4"
+            ></i>
+          </div>
+        </div>
+        <div
+          class="d-flex d-md-none align-items-center justify-content-center text-light gap-2"
+        >
+          <img id="fotoPerfil" src="img/perfil.png" alt="" height="70px" />
+          <i class="bi bi-bookmarks fs-1 iconePesquisa px-3 py-2 rounded-4"></i>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="container-fluid text-white d-flex flex-column align-items-center justify-content-center"
+    >
+      <!-- Título acima da primeira fileira -->
+ 
+      <!-- Primeira fileira de imagens -->
+     <!-- Título acima da fileira -->
+     <h1
+     id="filmes-em-alta"
+     style="text-align: left; color: white; margin-bottom: 20px; position: relative; top: 10px; left: 0; z-index: 1; width: 100%; padding-left: 20px;"
+   >
+     Filmes em alta
+   </h1>
+
+<!-- Fileira de imagens -->
+<div class="d-flex flex-wrap gap-3" style="margin-top: 50px; justify-content: center;">
+<div style="text-align: center;">
+  <img
+    src="img/wicked.avif"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 1"
+  />
+  <p style="margin-top: 10px; color: white;">Wicked</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/A substância.avif"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 2"
+  />
+  <p style="margin-top: 10px; color: white;">A Substância</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/aindaestouaqui.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 3"
+  />
+  <p style="margin-top: 10px; color: white;">Ainda Estou Aqui</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/spiderMan.png"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 4"
+  />
+  <p style="margin-top: 10px; color: white;">Spider-Man</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/corra.png"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 5"
+  />
+  <p style="margin-top: 10px; color: white;">Corra</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/Chromatica Ball Tour.png"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 6"
+  />
+  <p style="margin-top: 10px; color: white;">Chromatica Ball Tour</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/karate kid.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 7"
+  />
+  <p style="margin-top: 10px; color: white;">Karatê Kid: Lendas</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/lilo e stitch.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 8"
+  />
+  <p style="margin-top: 10px; color: white;">Lilo e Stitch</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/kung fu panda 4.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 9"
+  />
+  <p style="margin-top: 10px; color: white;">Kung Fu Panda 4</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/garfield.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 10"
+  />
+  <p style="margin-top: 10px; color: white;">Garfield</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/godzillaXkong.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 11"
+  />
+  <p style="margin-top: 10px; color: white;">Godzilla x Kong</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/lorax.jpg"
+    class="rounded-4"
+    style="width: 150px; height: 250px"
+    alt="Foto 12"
+  />
+  <p style="margin-top: 10px; color: white;">Lorax</p>
+</div>
+</div>
+
+      
+<h2
+id="albuns-para-voce"
+style="text-align: left; color: white; margin-bottom: 20px; position: relative; top: 10px; left: 0; z-index: 1; width: 100%; padding-left: 20px;"
+>
+Álbuns para você
+</h2>
+
+<!-- Fileira de imagens -->
+<div class="d-flex flex-wrap gap-3" style="margin-top: 50px; justify-content: center;">
+<div style="text-align: center;">
+  <img
+    src="img/artpop.jpg"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 1"
+  />
+  <p style="margin-top: 10px; color: white;">ART POP</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/brat.jpg"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 2"
+  />
+  <p style="margin-top: 10px; color: white;">Brat</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/lovetolove.jpg"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 3"
+  />
+  <p style="margin-top: 10px; color: white;">Love to Love</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/alter ego.png"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 4"
+  />
+  <p style="margin-top: 10px; color: white;">Alter Ego</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/damn.png"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 5"
+  />
+  <p style="margin-top: 10px; color: white;">DAMN</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/call me if you get lost.png"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 6"
+  />
+  <p style="margin-top: 10px; color: white;">Call Me If You Get Lost</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/SZA.jpg"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 7"
+  />
+  <p style="margin-top: 10px; color: white;">Ctrl (Deluxe)</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/the weeknd.jpg"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 8"
+  />
+  <p style="margin-top: 10px; color: white;">Live At SoFi Stadium</p>
+</div>
+<div style="text-align: center;">
+  <img
+    src="img/beyonce.jpg"
+    class="rounded-4"
+    style="width: 200px; height: 200px"
+    alt="Foto 9"
+  />
+  <p style="margin-top: 10px; color: white;">Cowboy Carter</p>
+</div>
+</div>
+      <!-- Título acima da terceira fileira -->
+      <h3
+      style="text-align: left; color: white; margin-bottom: 20px; position: relative; top: 10px; left: 0; z-index: 1; width: 100%; padding-left: 20px;"
+>
+  Trilhas sonoras
+</h3>
+      <!-- Terceira fileira de imagens -->
+      <div class="d-flex flex-wrap gap-3" style="margin-top: 50px; justify-content: center;">
+        <div style="text-align: center;">
+          <img
+            src="img/wicked.avif"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 1"
+          />
+          <p style="margin-top: 10px; color: white;">Wicked</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/lalaland.jpg"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 2"
+          />
+          <p style="margin-top: 10px; color: white;">La La Land</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/titanic.png"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 3"
+          />
+          <p style="margin-top: 10px; color: white;">Titanic</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/a-sart-is-born.png"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 4"
+          />
+          <p style="margin-top: 10px; color: white;">A Star Is Born</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/trolls.png"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 5"
+          />
+          <p style="margin-top: 10px; color: white;">Trolls</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/high school.png"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 6"
+          />
+          <p style="margin-top: 10px; color: white;">High School Musical</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/matilda.jpg"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 7"
+          />
+          <p style="margin-top: 10px; color: white;">Matilda</p>
+        </div>
+        <div style="text-align: center;">
+          <img
+            src="img/FilmeFrozen 2.jpg"
+            class="rounded-4"
+            style="width: 200px; height: 200px"
+            alt="Foto 8"
+          />
+          <p style="margin-top: 10px; color: white;">Frozen 2</p>
+        </div>
+       >
+    <div style="text-align: center;">
+      <img
+        src="img/chicago.jpg"
+        class="rounded-4"
+        style="width: 200px; height: 200px"
+        alt="Foto 9"
+      />
+      <p style="margin-top: 10px; color: white;">Chicago</p>
+    </div>>
+  </div>
+
+  <h4
+  id="resenhas"
+  style="text-align: left; color: white; margin-bottom: 20px; position: relative; top: 10px; left: 0; z-index: 1; width: 100%; padding-left: 20px;"
+> Resenhas
+</h4>
+      <!-- Quarta fileira de imagens -->
+      <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
+        <img
+          src="./img/Resenha (1).png"
+          class="rounded-4"
+          style="width: 350px; height: 250px"
+          alt="Foto 1"
+        />
+        <img
+          src="./img/Resenha-Umiranha (1).png"
+          class="rounded-4"
+          style="width: 350px; height: 250px"
+          alt="Foto 2"
+        />
+        <img
+          src="./img/resenhaCorra.png"
+          class="rounded-4"
+          style="width: 350px; height: 250px"
+          alt="Foto 3"
+        />
+        <img
+        src="./img/FROZEN 2.png"
+        class="rounded-4"
+        style="width: 350px; height: 250px"
+        alt="Foto 4"
+      />
+      </div>
+    </div>
+    <footer
+      class="text-light text-center fs-5 fw-bold"
+      style="margin: 0; padding: 0"
+    >
+      <p class="m-0 py-3 shadow">
+        © 2023 Melodrama. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <!-- <header>
+      <div class="px-3 site-header-main">
+        <nav id="site-navigation" class="main-navigation">
+          <img src="img/Design sem nome.png" alt="" height="60px" />
+          <ul id="menu-principal" class="navbar-nav">
+            <li id="" class="btn btn-dark rounded-pill">
+              <a class="small fw-bold" href="#">Músicas</a>
+            </li>
+            <li id="btnfilmes">
+              <a class="small fw-bold" href="#">Filmes</a>
+            </li>
+            <li id="btnresenhas">
+              <a class="small fw-bold" href="#">Resenhas</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="my-4 px-4 py-2 rounded-pill fundoPesquisa">
+          <input
+            class="bg-transparent border-0 text-light"
+            type="text"
+            name=""
+            id="pesquisar"
+            placeholder="Pesquisar..."
+          />
+          <i
+            class="bi bi-search p-1 rounded-2 iconePesquisa border border-1"
+          ></i>
+        </div>
+
+        <div class="sec-menu">
+          <img id="fotoPerfil" src="img/perfil.png" alt="" height="70px" />
+        </div>
+      </div>
+    </header> -->
+
+    <script src="./js/script.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
+      integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
