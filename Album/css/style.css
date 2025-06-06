@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "baumans";
+  src: url(Baumans/Baumans-Regular.ttf);
+}
+
+
+body {
+    background: linear-gradient(to bottom, #ff00a6, #000000);
+    color: white;
+    
+  }
+  .tracklist {
+
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+    display: flex;
+  }
+  
+  .track {
+    padding: 10px 15px;
+    background-color: #3c3a3a85;
+    border-radius: 9px;
+  }
+  .track-number {
+    font-weight: bold;
+    font-size: 24px;
+    flex: 1;
+    max-width: 60px;
+    align-items: center;
+    justify-content: center;
+    font-family: "baumans";
+  }
+  .track-name {
+    flex: 1;
+    max-width: 75%;
+    font-family: "baumans";
+  }
+
+  .control-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+  }
+  .icon-video::after {
+    content: "📹";
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  .info-up{
+      background: linear-gradient(to right, #e8e8e8, #7a7a7a);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
