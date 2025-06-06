@@ -9,14 +9,16 @@ body {
     color: white;
     
   }
-  .tracklist {
-
+  .music {
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
     flex-direction: column;
     gap: 10px;
     padding: 20px 0;
+    display: flex;
+  }
+  .tracklist {
     display: flex;
   }
   
@@ -29,13 +31,13 @@ body {
     font-weight: bold;
     font-size: 24px;
     flex: 1;
-    max-width: 60px;
+    max-width: 65px;
     align-items: center;
     justify-content: center;
     font-family: "baumans";
   }
   .track-name {
-    flex: 1;
+    
     max-width: 75%;
     font-family: "baumans";
   }
@@ -48,10 +50,10 @@ body {
   }
   .icon-video::after {
     content: "📹";
-    margin-left: 5px;
     font-size: 16px;
   }
   .info-up{
+      font-weight: bold;
       background: linear-gradient(to right, #e8e8e8, #7a7a7a);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
