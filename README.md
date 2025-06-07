@@ -16,4 +16,4 @@ Esses links levarão para páginas cruciais do projeto!😝
 - Jovens e Jovens Adultos são a principal faixa etária a se atingir
 - Artistas pequenos que querem se catapultar para o mercado
 - Artistas ja consolidados
-- Pessoas que procuram
+- Pessoas com interesse em avaliar filmes
