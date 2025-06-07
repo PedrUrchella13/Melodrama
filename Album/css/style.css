@@ -9,16 +9,24 @@ body {
     color: white;
     
   }
+  small {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #b9b9b9;
+  }
+  .header{
+    max-width: 100%;
+  }
   .music {
+    display: flex;
     border-radius: 10px;
     padding: 10px;
     margin-top: 20px;
     flex-direction: column;
     gap: 10px;
     padding: 20px 0;
-    display: flex;
-  }
-  .tracklist {
     display: flex;
   }
   
@@ -29,7 +37,7 @@ body {
   }
   .track-number {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     flex: 1;
     max-width: 65px;
     align-items: center;
@@ -37,9 +45,11 @@ body {
     font-family: "baumans";
   }
   .track-name {
-    
     max-width: 75%;
     font-family: "baumans";
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 20px;
   }
 
   .control-btn {
@@ -55,6 +65,6 @@ body {
   .info-up{
       font-weight: bold;
       background: linear-gradient(to right, #e8e8e8, #7a7a7a);
-      -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
   }
