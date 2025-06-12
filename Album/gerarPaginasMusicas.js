@@ -11,7 +11,11 @@ if (!fs.existsSync(musicasDir)) {
   console.log(`Pasta criada: ${musicasDir}`);
 }
 
+<<<<<<< HEAD
 // Le o index.html
+=======
+// Lê o index.html
+>>>>>>> 4208e927c6353a29b750666059bb6ca135888a45
 const indexHtml = fs.readFileSync(indexPath, 'utf8');
 
 // Expressão regular para pegar nomes das músicas
@@ -23,7 +27,11 @@ const musicas = [];
 while ((match = regex.exec(indexHtml)) !== null) {
   // Limpa o nome da música
   let nome = match[1].replace(/[\n\r]/g, '').trim();
+<<<<<<< HEAD
   // Remove caracteres inválidos pro nome de arquivo
+=======
+  // Remove caracteres inválidos para nome de arquivo
+>>>>>>> 4208e927c6353a29b750666059bb6ca135888a45
   let nomeArquivo = nome.replace(/[\\/:*?"<>|]/g, '').replace(/\s+/g, '_');
   musicas.push({ nome, nomeArquivo });
 }
